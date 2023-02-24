@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guessing Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5 mb-4">Guessing Game</h1>
+      <div class="form-group">
+        <label for="maxNumber">Max Number in :</label>
+        <input type="number" class="form-control" id="maxNumber" value="4" />
+      </div>
+      <div class="form-group">
+        <label for="maxAttempts">Max Attempts:</label>
+        <input type="number" class="form-control" id="maxAttempts" value="5" />
+      </div>
+      <button class="btn btn-primary mb-3" id="startButton" onclick="startGame()">
+        Start Game
+      </button>
+      <div id="game" style="display: none">
+        <p>Guess a number between 0 and <span id="maxNumberDisplay"></span>.</p>
+        <p>Remaining attempts: <span id="remainingAttempts"></span></p>
+        <div class="form-group">
+          <input type="number" class="form-control" id="guess" />
+        </div>
+        <button class="btn btn-primary" id="guessButton" onclick="guess()">Guess</button>
+        <button class="btn btn-secondary" id="restartButton" onclick="restartGame()" disabled>
+          Restart
+        </button>
+        <p id="gameOutput"></p>
+      </div>
+    </div>
+    <footer>
+      <p>Edinburgh college, 2023</p>
+      <p>Oleksandr Sharha©</p>
+    </footer>
+    <script src="guessing-game.js"></script>
+  </body>
+</html>

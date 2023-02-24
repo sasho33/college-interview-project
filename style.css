@@ -1,0 +1,31 @@
+#gameOutput {
+  background-color: beige;
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
+
+.container {
+  width: 770px;
+  height: auto;
+  flex: 1 0 auto;
+}
+body {
+  background-color: azure;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px 0;
+  background-color: #ceeaed;
+}
+html {
+  height: 100%;
+}
+
+.mt-5 {
+  text-align: center;
+  color: rgb(30, 19, 117);
+}
